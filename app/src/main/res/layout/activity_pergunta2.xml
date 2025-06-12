@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:text="Quais qualidades combinam com você?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Qualidade: Inteligente -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/universal"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbInteligente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inteligente"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Qualidade: Corajoso -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/universal"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbCorajoso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corajoso"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Qualidade: Altruísta -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/universal"
+                android:layout_marginEnd="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbAltruista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altruísta"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btnNext2"
+            android:text="Próxima"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

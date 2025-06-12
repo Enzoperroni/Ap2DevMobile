@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual estilo de jogo você prefere?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Custom RadioGroup layout -->
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Option 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/intelligence"
+                android:layout_marginEnd="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMagia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Magia e Controle"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Option 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/forca"
+                android:layout_marginEnd="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbForca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Força Bruta"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Option 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/agility"
+                android:layout_marginEnd="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbSuporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agilidade e Destreza"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Próxima"
+        android:textSize="20sp" />
+</LinearLayout>

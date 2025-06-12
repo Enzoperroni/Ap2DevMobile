@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:text="Resultado aparecerá aqui"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imgPersonagem"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Imagem do personagem"
+            android:scaleType="fitCenter"
+            android:src="@drawable/invoker" />
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar por E-mail"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar Quiz" />
+
+    </LinearLayout>
+</ScrollView>
